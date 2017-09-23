@@ -1,10 +1,10 @@
-# MQTT PingPong
+# MQTT Relay Switch
 
 ## Overview
 
-This node plays Ping Pong over MQTT. it's a simple MQTT test
-You need two nodes running this app.. they will start playing ping pong as soon they are connected to MQTT
-The game is over whenever something goes wrong.. just like in real life :D
+This is a simple MQTT constrolled switch. In the original project
+it switches mains power over a relay. Default pin is D4 on a Wemos
+
 have fun
  - luni
 

@@ -1,0 +1,25 @@
+author: bitluni <bitluni@bitluni.net>
+description: An MQTT test app that let's two nodes play Ping Pong
+version: 1.0
+manifest_version: 2017-05-18
+
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+tags:
+  - js
+  - mqtt
+  - test
+
+filesystem:
+  - fs
+
+config_schema:
+ - ["pins", "o", {title: "Pin configuration"}]
+ - ["pins.led", "i", 2, {title: "Built in LED pin"}]
+ - ["mqtt.server", "192.168.0.10:1883"]
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/js-demo-bundle
+
