@@ -4,6 +4,7 @@
 
 This is a simple MQTT constrolled switch. In the original project
 it switches mains power over a relay. Default pin is D4 on a Wemos
+Used in video https://youtu.be/OOqS8fhd6ck
 
 have fun
  - luni

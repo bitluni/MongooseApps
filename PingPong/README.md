@@ -5,6 +5,7 @@
 This node plays Ping Pong over MQTT. it's a simple MQTT test
 You need two nodes running this app.. they will start playing ping pong as soon they are connected to MQTT
 The game is over whenever something goes wrong.. just like in real life :D
+See video https://youtu.be/OOqS8fhd6ck for a demonstration
 have fun
  - luni
 

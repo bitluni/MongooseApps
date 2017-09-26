@@ -1,0 +1,22 @@
+author: bitluni <bitluni@bitluni.net>
+description: App for the smalles WiFi button in the world
+version: 1.0
+manifest_version: 2017-05-18
+
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+tags:
+  - javascript
+  - mqtt
+
+filesystem:
+  - fs
+
+config_schema:
+ - ["mqtt.server", "io.adafruit.com:1883"]
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/js-demo-bundle
+

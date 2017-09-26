@@ -1,0 +1,25 @@
+author: bitluni <bitluni@bitluni.net>
+description: An MQTT actuator that moves a servo connected to gpio 5 on recieved MQTT message
+version: 1.0
+manifest_version: 2017-05-18
+
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+tags:
+  - javaScript
+  - mqtt
+  - servo
+
+filesystem:
+  - fs
+
+config_schema:
+ - ["pins", "o", {title: "Pin configuration"}]
+ - ["pins.led", "i", 2, {title: "Built in LED pin"}]
+ - ["mqtt.server", "io.adafruit.com:1883"]
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/js-demo-bundle
+
